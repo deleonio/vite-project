@@ -1,11 +1,11 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@kolibri/core': 1.1.0-rc.2
-  '@kolibri/lib': 1.1.0-rc.2
-  '@kolibri/react': 1.1.0-rc.2
-  '@kolibri/schema': 1.1.0-rc.2
-  '@kolibri/themes': 1.1.0-rc.2
+  '@kolibri/core': file:./pkgs/core-1.1.0-rc.2.tgz
+  '@kolibri/lib': file:./pkgs/lib-1.1.0-rc.2.tgz
+  '@kolibri/react': file:./pkgs/react-1.1.0-rc.2.tgz
+  '@kolibri/schema': file:./pkgs/schema-1.1.0-rc.2.tgz
+  '@kolibri/themes': file:./pkgs/themes-1.1.0-rc.2.tgz
   '@leanup/form': 1.3.20
   '@leanup/lib': 1.3.20
   '@types/react': ^18.0.0
@@ -17,11 +17,11 @@ specifiers:
   vite: ^2.9.9
 
 dependencies:
-  '@kolibri/core': 1.1.0-rc.2
-  '@kolibri/lib': 1.1.0-rc.2_zzhikudlesug74vubknaeff3ee
-  '@kolibri/react': 1.1.0-rc.2_4vp3t6wedzyass6w2qm6bpf7tq
-  '@kolibri/schema': 1.1.0-rc.2_@kolibri+core@1.1.0-rc.2
-  '@kolibri/themes': 1.1.0-rc.2_@kolibri+schema@1.1.0-rc.2
+  '@kolibri/core': file:pkgs/core-1.1.0-rc.2.tgz
+  '@kolibri/lib': file:pkgs/lib-1.1.0-rc.2.tgz_zzhikudlesug74vubknaeff3ee
+  '@kolibri/react': file:pkgs/react-1.1.0-rc.2.tgz_4vp3t6wedzyass6w2qm6bpf7tq
+  '@kolibri/schema': file:pkgs/schema-1.1.0-rc.2.tgz_@kolibri+core@1.1.0-rc.2
+  '@kolibri/themes': file:pkgs/themes-1.1.0-rc.2.tgz_@kolibri+schema@1.1.0-rc.2
   '@leanup/form': 1.3.20
   '@leanup/lib': 1.3.20
   react: 18.2.0
@@ -341,52 +341,6 @@ packages:
       '@jridgewell/resolve-uri': 3.0.7
       '@jridgewell/sourcemap-codec': 1.4.13
     dev: true
-
-  /@kolibri/core/1.1.0-rc.2:
-    resolution: {integrity: sha512-ncZYQogRQdV98Yrf6DyMDtlJR5NfeDLuUu/5i8RH8OS52Vrn7f1c/oktsoVhx949uiEvrsnPTSshKRdUmhC0uQ==}
-    dependencies:
-      '@a11y-ui/core': 1.0.0-rc.9
-      rxjs: 7.5.5
-    dev: false
-
-  /@kolibri/lib/1.1.0-rc.2_zzhikudlesug74vubknaeff3ee:
-    resolution: {integrity: sha512-vqzFyIhkxJq1s/27ZuXzAWIx9GiuqjOTi+5u0FUbWWBN09eiwhmp75SyExPm6HBkCTZWMWi7TKGGazEInHWhGg==}
-    peerDependencies:
-      '@kolibri/schema': 1.1.0-rc.2
-      '@leanup/form': '>=1.2 && <2'
-    dependencies:
-      '@kolibri/schema': 1.1.0-rc.2_@kolibri+core@1.1.0-rc.2
-      '@leanup/form': 1.3.20
-      '@leanup/lib': 1.3.20
-    dev: false
-
-  /@kolibri/react/1.1.0-rc.2_4vp3t6wedzyass6w2qm6bpf7tq:
-    resolution: {integrity: sha512-4/Xwk0HOcZFiufxiZ58yJ5kWowfAB6ouCBgThj5zAkIq6f50FvhJ7yVgZOHhGBDt35JGXqCrOxg/WONCG9aM2g==}
-    peerDependencies:
-      '@kolibri/lib': 1.1.0-rc.2
-      react: '>=16.14.0'
-      react-dom: '>=16.14.0'
-    dependencies:
-      '@kolibri/lib': 1.1.0-rc.2_zzhikudlesug74vubknaeff3ee
-      react: 18.2.0
-      react-dom: 18.2.0_react@18.2.0
-    dev: false
-
-  /@kolibri/schema/1.1.0-rc.2_@kolibri+core@1.1.0-rc.2:
-    resolution: {integrity: sha512-IdEp7l+I/5t0GUxBH7FIF6NAQZpREXbBblbbsAJ787BbKniEvRcs28/3qgzlHoXU+gMaTpfT29/ai9oTSyVYhA==}
-    peerDependencies:
-      '@kolibri/core': 1.1.0-rc.2
-    dependencies:
-      '@kolibri/core': 1.1.0-rc.2
-    dev: false
-
-  /@kolibri/themes/1.1.0-rc.2_@kolibri+schema@1.1.0-rc.2:
-    resolution: {integrity: sha512-V/CoEIPGEh6XCmzYxWMN3kak0WJZPQC5q2YN5gI77BgieRdpf9o+8xmMfXtNLNWGrdPQQRiaKQBG96rtommDog==}
-    peerDependencies:
-      '@kolibri/schema': 1.1.0-rc.2
-    dependencies:
-      '@kolibri/schema': 1.1.0-rc.2_@kolibri+core@1.1.0-rc.2
-    dev: false
 
   /@leanup/form/1.3.20:
     resolution: {integrity: sha512-lmoutZL7d4HYFgEdXOKLraFTj44DkVGztzpaHIX795O9tPViVn6/q+o0X2++lZtxyC2EMFie4hKU+Atg4XrPQw==}
@@ -965,3 +919,62 @@ packages:
     optionalDependencies:
       fsevents: 2.3.2
     dev: true
+
+  file:pkgs/core-1.1.0-rc.2.tgz:
+    resolution: {integrity: sha512-ncZYQogRQdV98Yrf6DyMDtlJR5NfeDLuUu/5i8RH8OS52Vrn7f1c/oktsoVhx949uiEvrsnPTSshKRdUmhC0uQ==, tarball: file:pkgs/core-1.1.0-rc.2.tgz}
+    name: '@kolibri/core'
+    version: 1.1.0-rc.2
+    dependencies:
+      '@a11y-ui/core': 1.0.0-rc.9
+      rxjs: 7.5.5
+    dev: false
+
+  file:pkgs/lib-1.1.0-rc.2.tgz_zzhikudlesug74vubknaeff3ee:
+    resolution: {integrity: sha512-FkqySp6SwPYUd6s7GVAd2AjZdqfUtCMCIJiFnyiAJzjPC6wpGawGvlPqq+HkFb6c/gn8c0hKcwwo0ENdI00oUQ==, tarball: file:pkgs/lib-1.1.0-rc.2.tgz}
+    id: file:pkgs/lib-1.1.0-rc.2.tgz
+    name: '@kolibri/lib'
+    version: 1.1.0-rc.2
+    peerDependencies:
+      '@kolibri/schema': 1.1.0-rc.2
+      '@leanup/form': '>=1.2 && <2'
+    dependencies:
+      '@kolibri/schema': file:pkgs/schema-1.1.0-rc.2.tgz_@kolibri+core@1.1.0-rc.2
+      '@leanup/form': 1.3.20
+    dev: false
+
+  file:pkgs/react-1.1.0-rc.2.tgz_4vp3t6wedzyass6w2qm6bpf7tq:
+    resolution: {integrity: sha512-hbjqDRAA5B0YQH8RsD7P1LObk5jTjv3bR7g2nVhB9XEUlTNP9pVJ4vVLXA3InluBcaR7HeO+5+pwa9M1nqpFzw==, tarball: file:pkgs/react-1.1.0-rc.2.tgz}
+    id: file:pkgs/react-1.1.0-rc.2.tgz
+    name: '@kolibri/react'
+    version: 1.1.0-rc.2
+    peerDependencies:
+      '@kolibri/lib': 1.1.0-rc.2
+      react: '>=16.14.0'
+      react-dom: '>=16.14.0'
+    dependencies:
+      '@kolibri/lib': file:pkgs/lib-1.1.0-rc.2.tgz_zzhikudlesug74vubknaeff3ee
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
+    dev: false
+
+  file:pkgs/schema-1.1.0-rc.2.tgz_@kolibri+core@1.1.0-rc.2:
+    resolution: {integrity: sha512-IdEp7l+I/5t0GUxBH7FIF6NAQZpREXbBblbbsAJ787BbKniEvRcs28/3qgzlHoXU+gMaTpfT29/ai9oTSyVYhA==, tarball: file:pkgs/schema-1.1.0-rc.2.tgz}
+    id: file:pkgs/schema-1.1.0-rc.2.tgz
+    name: '@kolibri/schema'
+    version: 1.1.0-rc.2
+    peerDependencies:
+      '@kolibri/core': 1.1.0-rc.2
+    dependencies:
+      '@kolibri/core': file:pkgs/core-1.1.0-rc.2.tgz
+    dev: false
+
+  file:pkgs/themes-1.1.0-rc.2.tgz_@kolibri+schema@1.1.0-rc.2:
+    resolution: {integrity: sha512-PK04hi43Iq0g5yHeP7ZuqiQXDWIjqnwPza/+PrYdMebZloNM5tIaflPhrjM/xSML2OT/E/oEvdO714Rm64Rjgw==, tarball: file:pkgs/themes-1.1.0-rc.2.tgz}
+    id: file:pkgs/themes-1.1.0-rc.2.tgz
+    name: '@kolibri/themes'
+    version: 1.1.0-rc.2
+    peerDependencies:
+      '@kolibri/schema': 1.1.0-rc.2
+    dependencies:
+      '@kolibri/schema': file:pkgs/schema-1.1.0-rc.2.tgz_@kolibri+core@1.1.0-rc.2
+    dev: false

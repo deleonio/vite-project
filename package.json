@@ -8,11 +8,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
-		"@kolibri/core": "1.1.0-rc.2",
-		"@kolibri/lib": "1.1.0-rc.2",
-		"@kolibri/react": "1.1.0-rc.2",
-		"@kolibri/schema": "1.1.0-rc.2",
-		"@kolibri/themes": "1.1.0-rc.2",
+		"@kolibri/core": "file:./pkgs/core-1.1.0-rc.2.tgz",
+		"@kolibri/lib": "file:./pkgs/lib-1.1.0-rc.2.tgz",
+		"@kolibri/react": "file:./pkgs/react-1.1.0-rc.2.tgz",
+		"@kolibri/schema": "file:./pkgs/schema-1.1.0-rc.2.tgz",
+		"@kolibri/themes": "file:./pkgs/themes-1.1.0-rc.2.tgz",
 		"@leanup/form": "1.3.20",
 		"@leanup/lib": "1.3.20",
     "react": "^18.0.0",
