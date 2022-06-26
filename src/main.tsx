@@ -1,4 +1,5 @@
-import { defineCustomElements, KolKolibri, register } from "@kolibri/react";
+import { register } from "@kolibri/core";
+import { defineCustomElements, KolKolibri  } from "@kolibri/react";
 import { BMF } from "@kolibri/themes";
 import React from "react";
 import ReactDOM from "react-dom/client";

@@ -8,7 +8,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@kolibri/lib": "1.1.0-rc.5",
+    "@kolibri/core": "1.1.0-rc.5",
     "@kolibri/react": "1.1.0-rc.5",
     "@kolibri/themes": "1.1.0-rc.5",
     "@leanup/form": "1.3.20",
